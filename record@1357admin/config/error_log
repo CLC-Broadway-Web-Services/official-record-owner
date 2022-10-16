@@ -1,0 +1,9 @@
+[08-Apr-2021 12:28:12 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home2/awsdemoco/public_html/rbs/official-agency/rbs@1357admin/config/db-export.php on line 23
+[08-Apr-2021 12:28:12 UTC] PHP Warning:  mysqli::select_db(): Couldn't fetch mysqli in /home2/awsdemoco/public_html/rbs/official-agency/rbs@1357admin/config/db-export.php on line 24
+[08-Apr-2021 12:28:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/awsdemoco/public_html/rbs/official-agency/rbs@1357admin/config/db-export.php on line 25
+[08-Apr-2021 12:28:12 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/awsdemoco/public_html/rbs/official-agency/rbs@1357admin/config/db-export.php on line 27
+[08-Apr-2021 12:28:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_row() on bool in /home2/awsdemoco/public_html/rbs/official-agency/rbs@1357admin/config/db-export.php:28
+Stack trace:
+#0 /home2/awsdemoco/public_html/rbs/official-agency/rbs@1357admin/config/db-export.php(19): Export_Database('localhost', 'root', '', 'rbs_official', false, 'rbs official08-...')
+#1 {main}
+  thrown in /home2/awsdemoco/public_html/rbs/official-agency/rbs@1357admin/config/db-export.php on line 28
