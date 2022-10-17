@@ -31,7 +31,7 @@ $cateogryQuery = $function->getAllItems("$table");
   <section class="content-header">
     <h1> Manage <?= $pageName ?> <small>View <?= $pageName ?></small> </h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active">View <?= $pageName ?></li>
     </ol>
   </section>
@@ -59,7 +59,7 @@ $cateogryQuery = $function->getAllItems("$table");
             <?php } ?>
 
             <div class="table-responsive">
-            <a href="add-catalogue-category.php" class="btn btn-success" style="float: right;">Add <?= $pageName ?></a>
+            <a href="/record@1357admin/add-catalogue-category.php" class="btn btn-success" style="float: right;">Add <?= $pageName ?></a>
 
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
@@ -81,13 +81,13 @@ $cateogryQuery = $function->getAllItems("$table");
                       <td><?php echo $i++; ?></td>
                       <td><?php echo $row['name']; ?></td>
                       <td>
-                      <a href="?status=<?= $row['status'] ? 0 : 1 ?>&id=<?php echo $row['id']; ?>"><i class="fa fa-toggle-<?= $row['status'] ? "on" : "off" ?>"></i></a>
+                      <a href="/record@1357admin/view-catalogue-category.php?status=<?= $row['status'] ? 0 : 1 ?>&id=<?php echo $row['id']; ?>"><i class="fa fa-toggle-<?= $row['status'] ? "on" : "off" ?>"></i></a>
 
                       </td>
                       <td>
-                        <a href="add-catalogue-category.php?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a>
+                        <a href="/record@1357admin/add-catalogue-category.php?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a>
                         ||
-                        <a href="?id=<?php echo $row['id']; ?>&delete=y" onClick="return confirm('Are you sure !! Record will be delete parmanently ..!!')"><i class="fa fa-trash-o"></i></a>
+                        <a href="/record@1357admin/view-catalogue-category.php?id=<?php echo $row['id']; ?>&delete=y" onClick="return confirm('Are you sure !! Record will be delete parmanently ..!!')"><i class="fa fa-trash-o"></i></a>
                       </td>
                     </tr>
                   <?php endforeach; ?>

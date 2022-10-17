@@ -33,7 +33,7 @@ $cateogryQuery = $function->getAllItems("$table");
   <section class="content-header">
     <h1> Manage Projects <small>View Projects</small> </h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active">View Projects</li>
     </ol>
   </section>
@@ -62,7 +62,7 @@ $cateogryQuery = $function->getAllItems("$table");
 
 
             <div class="table-responsive">
-            <a href="add-catalogue" class="btn btn-success" style="float: right;">Add Project</a>
+            <a href="/record@1357admin/add-catalogue.php" class="btn btn-success" style="float: right;">Add Project</a>
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                   <tr>

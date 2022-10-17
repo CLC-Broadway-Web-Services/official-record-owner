@@ -22,7 +22,7 @@ $ContactUs = new ContactUs();
     <section class="content-header">
       <h1> Manage Contact Us <small>View Contact Us</small> </h1>
       <ol class="breadcrumb">
-        <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active"> View Contact Us</li>
       </ol>
     </section>
@@ -74,13 +74,13 @@ $ContactUs = new ContactUs();
                     <td>
                         <?php
                         if($hfacSettingsQuery['contactaddressView'] == 1){ ?>
-                             <a href="?item=contactaddressView&&action=0&&id=1"> <i class="fa fa-toggle-on"></i></a>
+                             <a href="/record@1357admin/view-contact-us.php?item=contactaddressView&&action=0&&id=1"> <i class="fa fa-toggle-on"></i></a>
                         <?php }else{ ?>
-                             <a href="?item=contactaddressView&&action=1&&id=1"> <i class="fa fa-toggle-off"></i></a>
+                             <a href="/record@1357admin/view-contact-us.php?item=contactaddressView&&action=1&&id=1"> <i class="fa fa-toggle-off"></i></a>
                        <?php } ?>
                         
                     </td>
-                     <td><a href="update-contact-us?id=1"><i class="fa fa-edit"></i>Edit</a></td>
+                     <td><a href="/record@1357admin/update-contact-us?id=1"><i class="fa fa-edit"></i>Edit</a></td>
                     
                   </tr>
                   
@@ -92,13 +92,13 @@ $ContactUs = new ContactUs();
                     <td>
                         <?php
                         if($hfacSettingsQuery['contactphoneView'] == 1){ ?>
-                            <a href="?item=contactphoneView&&action=0&&id=1"> <i class="fa fa-toggle-on"></i></a>
+                            <a href="/record@1357admin/view-contact-us.php?item=contactphoneView&&action=0&&id=1"> <i class="fa fa-toggle-on"></i></a>
                         <?php }else{ ?>
-                             <a href="?item=contactphoneView&&action=1&&id=1"> <i class="fa fa-toggle-off"></i></a>
+                             <a href="/record@1357admin/view-contact-us.php?item=contactphoneView&&action=1&&id=1"> <i class="fa fa-toggle-off"></i></a>
                        <?php } ?>
                         
                     </td>
-                     <td><a href="update-contact-us?id=1"><i class="fa fa-edit"></i>Edit</a></td>
+                     <td><a href="/record@1357admin/update-contact-us?id=1"><i class="fa fa-edit"></i>Edit</a></td>
                     
                   </tr>
                   
@@ -109,13 +109,13 @@ $ContactUs = new ContactUs();
                     <td>
                         <?php
                         if($hfacSettingsQuery['contactemailView'] == 1){ ?>
-                            <a href="?item=contactemailView&&action=0&&id=1"> <i class="fa fa-toggle-on"></i></a>
+                            <a href="/record@1357admin/view-contact-us.php?item=contactemailView&&action=0&&id=1"> <i class="fa fa-toggle-on"></i></a>
                         <?php }else{ ?>
-                             <a href="?item=contactemailView&&action=1&&id=1"> <i class="fa fa-toggle-off"></i></a>
+                             <a href="/record@1357admin/view-contact-us.php?item=contactemailView&&action=1&&id=1"> <i class="fa fa-toggle-off"></i></a>
                        <?php } ?>
                         
                     </td>
-                     <td><a href="update-contact-us?id=1"><i class="fa fa-edit"></i>Edit</a></td>
+                     <td><a href="/record@1357admin/update-contact-us?id=1"><i class="fa fa-edit"></i>Edit</a></td>
                     
                   </tr>
                   

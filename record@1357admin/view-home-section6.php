@@ -37,7 +37,7 @@ $section6Data = $function->getAllItems($table);
   <section class="content-header">
     <h1> Manage Home section6 <small>View Home section6</small> </h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active"> View Home section6</li>
     </ol>
   </section>
@@ -64,7 +64,7 @@ $section6Data = $function->getAllItems($table);
               </div>
             <?php } ?>
             <div class="table-responsive">
-            <a href="update-home-section6" class="btn btn-success" style="float: right; margin-bottom:20px">Add Testimonial</a>
+            <a href="/record@1357admin/update-home-section6.php" class="btn btn-success" style="float: right; margin-bottom:20px">Add Testimonial</a>
 
               <table id="example1" class="table table-bordered table-striped">
                 <thead>

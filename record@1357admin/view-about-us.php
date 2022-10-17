@@ -15,7 +15,7 @@ $hfacSettings = new hfacSettings();
   <section class="content-header">
     <h1> Manage Fest <small>View Fest</small> </h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active"> View Fest</li>
     </ol>
   </section>
@@ -44,7 +44,7 @@ $hfacSettings = new hfacSettings();
             <div class="table-responsive">
               <table id="example1" class="table table-bordered table-striped">
                 <div style="float: right;">
-                  <a href="update-about-us?id=1"><button class="btn btn-primary"><i class="fa fa-edit"></i>&nbsp;&nbsp;&nbsp; Edit</button></a>
+                  <a href="/record@1357admin/update-about-us.php?id=1"><button class="btn btn-primary"><i class="fa fa-edit"></i>&nbsp;&nbsp;&nbsp; Edit</button></a>
                 </div>
 
                 <tbody>

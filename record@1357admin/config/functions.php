@@ -702,6 +702,12 @@ class record
 		$stmt = $conn->getAllData("SELECT * FROM `$table` ORDER BY `id` DESC");
 		return $stmt;
 	}
+	function runQuery($query)
+	{
+		$conn = new dbClass;
+		$stmt = $conn->getAllData($query);
+		return $stmt;
+	}
 	function getAllItemswithoutOrder($table)
 	{
 		$conn = new dbClass;

@@ -37,7 +37,7 @@ $editval =  $function->getAllItems($table)[0];
   <section class="content-header">
     <h1> Manage Home section7 </h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active">Update Home section7</li>
     </ol>
   </section>
@@ -96,7 +96,7 @@ $editval =  $function->getAllItems($table)[0];
 
               <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-4">
-                  <a href="view-home-section7" class="btn btn-success"><i class="fa fa-arrow-left"></i> Go Back</a>
+                  <a href="/record@1357admin/view-home-section7.php" class="btn btn-success"><i class="fa fa-arrow-left"></i> Go Back</a>
                 </div>
                 <div class=" col-sm-4">
                   <input type="submit" name="update" value="Update" class="btn btn-danger">

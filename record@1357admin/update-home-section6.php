@@ -75,7 +75,7 @@ $editval =  $function->getSingleItem($id,$table);
   <section class="content-header">
     <h1> Manage Home section6 </h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active"><?= ucwords($button) ?> Home section6</li>
     </ol>
   </section>
@@ -136,7 +136,7 @@ $editval =  $function->getSingleItem($id,$table);
 
               <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-4">
-                  <a href="view-home-section6" class="btn btn-success"><i class="fa fa-arrow-left"></i> Go Back</a>
+                  <a href="/record@1357admin/view-home-section6.php" class="btn btn-success"><i class="fa fa-arrow-left"></i> Go Back</a>
                 </div>
                 <div class=" col-sm-4">
                   <input type="submit" name="<?= ($button) ?>" value="<?= ucwords($button) ?>" class="btn btn-danger">

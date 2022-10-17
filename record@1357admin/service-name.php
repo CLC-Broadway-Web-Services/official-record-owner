@@ -33,7 +33,7 @@ $cateogryQuery = $function->getAllItemswithoutOrder("$table");
   <section class="content-header">
     <h1> Manage Services Film  <small>View Services Film </small> </h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active">View Services Film </li>
     </ol>
   </section>
@@ -80,9 +80,9 @@ $cateogryQuery = $function->getAllItemswithoutOrder("$table");
                     <tr>
                       <td><?php echo $i++; ?></td>
                       <td><?php echo $row['name']; ?></td>
-                      <td><a href="?status=<?= $row['active'] ? 0 : 1 ?>&id=<?php echo $row['id']; ?>"><i class="fa fa-toggle-<?= $row['active'] ? "on" : "off" ?>"></i></a> </td>
+                      <td><a href="/record@1357admin/service-name.php?status=<?= $row['active'] ? 0 : 1 ?>&id=<?php echo $row['id']; ?>"><i class="fa fa-toggle-<?= $row['active'] ? "on" : "off" ?>"></i></a> </td>
                       <td>
-                        <a href="service-name-add.php?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a>
+                        <a href="/record@1357admin/service-name-add.php?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a>
                       </td>
                     </tr>
                   <?php endforeach; ?>

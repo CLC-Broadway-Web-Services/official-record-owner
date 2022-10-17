@@ -49,7 +49,7 @@ $editval = $admin->getBanners($id);
   <section class="content-header">
     <h1> Banner </h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active">Add Banner</li>
     </ol>
   </section>
@@ -117,7 +117,7 @@ $editval = $admin->getBanners($id);
 
                 <div class="form-group">
                   <div class="col-sm-offset-2 col-sm-4">
-                    <a href="view-banner" class="btn btn-success"><i class="fa fa-arrow-left"></i> Go Back</a>
+                    <a href="/record@1357admin/view-banner.php" class="btn btn-success"><i class="fa fa-arrow-left"></i> Go Back</a>
                   </div>
                 </div>
                 <div class="form-group">
@@ -166,7 +166,7 @@ $editval = $admin->getBanners($id);
                 </div>
                 <div class="form-group">
                   <div class="col-sm-offset-2 col-sm-4">
-                    <a href="view-banner" class="btn btn-success"><i class="fa fa-arrow-left"></i> Go Back</a>
+                    <a href="/record@1357admin/view-banner.php" class="btn btn-success"><i class="fa fa-arrow-left"></i> Go Back</a>
                   </div>
                 </div>
                 <div class="form-group">

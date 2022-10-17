@@ -49,7 +49,7 @@ $serviceMenu = array_column($function->getAllItemswithoutOrder("service_name"),"
   <div class="wrapper">
     <header class="main-header">
 
-      <a href="home.php" class="logo">
+      <a href="/record@1357admin/home.php" class="logo">
         <span style="font-family: 'Joti One', cursive;
     color: #da0e2b;
     font-weight: 700;

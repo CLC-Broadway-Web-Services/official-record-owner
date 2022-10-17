@@ -28,7 +28,7 @@ if (isset($_REQUEST['delete']) && $_REQUEST['delete'] == 'y') {
     <section class="content-header">
         <h1> <?= ucwords($table) ?> </h1>
         <ol class="breadcrumb">
-            <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
             <li class="active"><?= ucwords($table) ?></li>
         </ol>
     </section>

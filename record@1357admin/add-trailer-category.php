@@ -50,7 +50,7 @@ $dataArray = [
   <section class="content-header">
     <h1> Manage  <?= ucwords($page) ?></h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active">Add  <?= ucwords($page) ?></li>
     </ol>
   </section>
@@ -85,7 +85,7 @@ $dataArray = [
                
                 <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-4">
-                  <a href="view-trailer-category.php" class="btn btn-success"><i class="fa fa-arrow-left"></i> Go Back</a>
+                  <a href="/record@1357admin/view-trailer-category.php" class="btn btn-success"><i class="fa fa-arrow-left"></i> Go Back</a>
                 </div>
                 <div class=" col-sm-4">
                 <input type="submit" name="<?= $save ?>" value="<?= ucwords($save) ?>" class="btn btn-danger">

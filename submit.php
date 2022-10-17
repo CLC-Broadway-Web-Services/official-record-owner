@@ -3,7 +3,8 @@ include "globals/header.php";
 $data = $db->getData("SELECT address,phone,email FROM contactus");
 $dataVisibleStatus = $db->getData("SELECT contactaddressView address, contactphoneView phone, contactemailView email FROM hfacsettings");
 // return print_r($data);
-$submit_data = $db->getAllData("SELECT * FROM submit_dynamic");
+$submit_data = $db->getAllData("SELECT * FROM submit_dynamic WHERE `other` = 0");
+$submit_details = $db->getAllData("SELECT * FROM submit_dynamic WHERE `id` = 1");
 $bannerData = data("pages_banner", 1, 2, 19);
 ?>
 <style>
@@ -64,11 +65,18 @@ $bannerData = data("pages_banner", 1, 2, 19);
 				<div class="col-md-3">
 					<div class="contact-info">
 						<div class="row">
+							<div class="col-12 border-bottom">
+								<h6>Rules</h6>
+								<?= $submit_details[0]['image']; ?>
+							</div>
+							<div class="col-12 border-bottom">
+								<h6>Deadlines</h6>
+								<?= $submit_details[0]['heading']; ?>
+							</div>
 							<?php foreach ($submit_data as $v) : ?>
-								<div class="col-md-4">
-									<a href="<?= $v['link_url'] ?>">
+								<div class="col-12">
+									<a href="<?= $v['link_url'] ?>" target="_blank">
 										<img src="record@1357admin/dist/img/<?= $v['image'] ?>" alt="small icons">
-										<h6><?= $v['heading'] ?></h6>
 									</a>
 								</div>
 							<?php endforeach; ?>
@@ -137,7 +145,6 @@ $bannerData = data("pages_banner", 1, 2, 19);
 			</div>
 		</div>
 	</div>
-
 
 </div>
 <?php include "globals/footer.php"; ?>

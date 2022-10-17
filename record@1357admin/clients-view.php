@@ -24,7 +24,7 @@ $status = $_REQUEST['status'];
     <section class="content-header">
       <h1> Manage Clients <small>View Clients</small> </h1>
       <ol class="breadcrumb">
-        <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">View Clients</li>
       </ol>
     </section>
@@ -74,15 +74,15 @@ $status = $_REQUEST['status'];
                     <td><?php echo date('d-m-Y', strtotime($row['created_at'])); ?></td>
                     <td>
 					<?php if($row['status']==1): ?>
-                    <a href="?status=0&id=<?php echo $row['id']; ?>"><i class="fa fa-eye"></i></a>
+                    <a href="/record@1357admin/clients-view.php?status=0&id=<?php echo $row['id']; ?>"><i class="fa fa-eye"></i></a>
                     <?php else: ?>
-                    <a href="?status=1&id=<?php echo $row['id']; ?>"><i class="fa fa-eye-slash"></i></a>
+                    <a href="/record@1357admin/clients-view.php?status=1&id=<?php echo $row['id']; ?>"><i class="fa fa-eye-slash"></i></a>
                     <?php endif; ?>
                     </td>
                     <td>
-                    <a href="clients-add.php?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a> 
+                    <a href="/record@1357admin/clients-add.php?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a> 
                     || 
-                     <a href="?id=<?php echo $row['id']; ?>&delete=y" onClick="return confirm('Are you sure !! Record will be delete parmanently ..!!')"><i class="fa fa-trash-o"></i></a></td>
+                     <a href="/record@1357admin/clients-view.php?id=<?php echo $row['id']; ?>&delete=y" onClick="return confirm('Are you sure !! Record will be delete parmanently ..!!')"><i class="fa fa-trash-o"></i></a></td>
                   </tr>
                   <?php endforeach; ?>
                 </tbody>

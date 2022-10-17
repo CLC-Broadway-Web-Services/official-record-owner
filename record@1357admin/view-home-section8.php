@@ -21,7 +21,7 @@ $section8Data = $function->getAllItems($table);
   <section class="content-header">
     <h1> Manage Home section8 <small>View Home section8</small> </h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active"> View Home section8</li>
     </ol>
   </section>

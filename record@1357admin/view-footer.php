@@ -24,7 +24,7 @@ $cateogryQuery = $function->getAllItemswithoutOrder($table);
   <section class="content-header">
     <h1> Manage Footer </h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active">View Footer</li>
     </ol>
   </section>
@@ -53,10 +53,10 @@ $cateogryQuery = $function->getAllItemswithoutOrder($table);
                   <tr>
                     <td><img src="dist/img/<?php echo $row['name']; ?>" /></td>
                     <td>
-                      <a href="?status=<?= $row['status'] ? 0 : 1 ?>&id=<?php echo $row['id']; ?>"><i class="fa fa-toggle-<?= $row['status'] ? "on" : "off" ?>"></i></a>
+                      <a href="/record@1357admin/view-footer.php?status=<?= $row['status'] ? 0 : 1 ?>&id=<?php echo $row['id']; ?>"><i class="fa fa-toggle-<?= $row['status'] ? "on" : "off" ?>"></i></a>
                     </td>
                     <td>
-                      <a href="update-header?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a>
+                      <a href="/record@1357admin/update-header?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a>
                     </td>
                   </tr>
                 </tbody>
@@ -128,10 +128,10 @@ $cateogryQuery = $function->getAllItemswithoutOrder($table);
                         <td><?php echo $var; ?></td>
                         <td><?php echo $row['name']; ?></td>
                         <td>
-                          <a href="?status=<?= $row['status'] ? 0 : 1 ?>&id=<?php echo $row['id']; ?>"><i class="fa fa-toggle-<?= $row['status'] ? "on" : "off" ?>"></i></a>
+                          <a href="/record@1357admin/view-footer.php?status=<?= $row['status'] ? 0 : 1 ?>&id=<?php echo $row['id']; ?>"><i class="fa fa-toggle-<?= $row['status'] ? "on" : "off" ?>"></i></a>
                         </td>
                         <td>
-                          <a href="update-footer?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a>
+                          <a href="/record@1357admin/update-footer?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a>
                         </td>
                       </tr>
                   <?php $i++;

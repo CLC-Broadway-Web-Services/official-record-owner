@@ -93,13 +93,13 @@ if ($is_video) {
 							<div class="item">
 								<div class="item-inner">
 									<div class="thumb">
-										<a href="finterview-details.php?id=<?= base64_encode($item['id']) ?>">
+										<a href="interview-details.php?id=<?= base64_encode($item['id']) ?>">
 											<img src="record@1357admin/dist/img/<?= ($item['image']) ?>" alt="" />
 										</a>
 									</div>
 									<div class="info">
 										<div class="title">
-											<a href="finterview-details.php?id=<?= base64_encode($item['id']) ?>"><?= substr($item['heading'], 0, 20) ?></a>
+											<a href="interview-details.php?id=<?= base64_encode($item['id']) ?>"><?= substr($item['heading'], 0, 20) ?></a>
 										</div>
 									</div>
 								</div>

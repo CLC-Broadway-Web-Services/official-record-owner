@@ -2,7 +2,7 @@
 include 'globals/header.php';
 
 $function = new record();
-$table = "service";
+$table = 'submit_dynamic';
 
 
 // delete record query
@@ -19,8 +19,10 @@ if (isset($_REQUEST['delete']) && $_REQUEST['delete'] == 'y') {
 }
 // visibility record query
 if (isset($_REQUEST['status'])) {
+
   $id = $_REQUEST['id'];
   $status = $_REQUEST['status'];
+
   $sqlStatus = $db->execute("UPDATE `$table` SET `status` = '$status' WHERE `id` = '$id'");
 }
 
@@ -29,10 +31,10 @@ $cateogryQuery = $function->getAllItems("$table");
 ?>
 <div class="content-wrapper">
   <section class="content-header">
-    <h1> Manage Services  <small>View Services </small> </h1>
+    <h1> Manage Submit Dynamic <small>View Submit Dynamic</small> </h1>
     <ol class="breadcrumb">
       <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">View Services </li>
+      <li class="active">View Submit Dynamic</li>
     </ol>
   </section>
 
@@ -42,7 +44,7 @@ $cateogryQuery = $function->getAllItems("$table");
       <div class="col-xs-12">
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">View Services </h3>
+            <h3 class="box-title">View Submit Dynamic</h3>
           </div>
           <div class="box-body">
             <?php if (isset($msg)) { ?>
@@ -58,14 +60,16 @@ $cateogryQuery = $function->getAllItems("$table");
               </div>
             <?php } ?>
 
+
             <div class="table-responsive">
-              <a href="/record@1357admin/add-services.php" class="btn btn-success" style="float: right;">Add Services </a>
+              <a href="/record@1357admin/add-submit-dynamic.php" class="btn btn-success" style="float: right;">Add New</a>
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                   <tr>
                     <th>S.No</th>
-                    <th>service Name</th>
+                    <th>Heading</th>
                     <th>Image</th>
+                    <th>link</th>
                     <th>Date</th>
                     <th>Status</th>
                     <th>Action</th>
@@ -73,27 +77,22 @@ $cateogryQuery = $function->getAllItems("$table");
                 </thead>
                 <tbody>
                   <?php
-
                   $i = 1;
                   foreach ($cateogryQuery as $row) :
-
                   ?>
                     <tr>
                       <td><?php echo $i++; ?></td>
                       <td><?php echo $row['heading']; ?></td>
                       <td><img src="dist/img/<?php echo $row['image']; ?>" height="100" width="200" /></td>
+                      <td><a href="<?= $row['link_url'] ?>" target="_blank"><?= $row['link_title'] ?></a></td>
                       <td><?php echo date('d-m-Y', strtotime($row['created_at'])); ?></td>
                       <td>
-                        <?php if ($row['status'] == 1) : ?>
-                          <a href="/record@1357admin/view-home-section4-2.php?status=0&id=<?php echo $row['id']; ?>"><i class="fa fa-eye"></i></a>
-                        <?php else : ?>
-                          <a href="/record@1357admin/view-home-section4-2.php?status=1&id=<?php echo $row['id']; ?>"><i class="fa fa-eye-slash"></i></a>
-                        <?php endif; ?>
+                        <a href="?status=<?= $row['status'] ? 0 : 1 ?>&id=<?php echo $row['id']; ?>"><i class="fa fa-toggle-<?= $row['status'] ? "on" : "off" ?>"></i></a>
                       </td>
                       <td>
-                        <a href="/record@1357admin/add-services.php?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a>
+                        <!-- <a href="add-submit-dynamic.php?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a> -->
                         ||
-                        <a href="/record@1357admin/view-home-section4-2.php?id=<?php echo $row['id']; ?>&delete=y" onClick="return confirm('Are you sure !! Record will be delete parmanently ..!!')"><i class="fa fa-trash-o"></i></a>
+                        <a href="?id=<?php echo $row['id']; ?>&delete=y" onClick="return confirm('Are you sure !! Record will be delete parmanently ..!!')"><i class="fa fa-trash-o"></i></a>
                       </td>
                     </tr>
                   <?php endforeach; ?>

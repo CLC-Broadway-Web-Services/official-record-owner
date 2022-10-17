@@ -86,13 +86,13 @@ $bannerData = data("pages_banner", 1, 2, 13);
 							<div class="col-md-4 col-sm-6">
 								<div class="film-masonry-item-inner">
 									<div class="thumb">
-										<a href="finterview-details.php?id=<?= base64_encode($item['mainId']) ?>">
+										<a href="interview-details.php?id=<?= base64_encode($item['mainId']) ?>">
 											<img src="record@1357admin/dist/img/<?= $item['image'] ?>" alt="">
 										</a>
 									</div>
 									<div class="info1">
 										<div class="title">
-											<a href="finterview-details.php?id=<?= base64_encode($item['mainId']) ?>"><?= $item['heading'] ?></a>
+											<a href="interview-details.php?id=<?= base64_encode($item['mainId']) ?>"><?= $item['heading'] ?></a>
 										</div>
 
 									</div>
@@ -110,13 +110,13 @@ $bannerData = data("pages_banner", 1, 2, 13);
 								<div class="col-md-4 col-sm-6">
 									<div class="film-masonry-item-inner">
 										<div class="thumb">
-											<a href="finterview-details.php?id=<?= base64_encode($row['mainId']) ?>">
+											<a href="interview-details.php?id=<?= base64_encode($row['mainId']) ?>">
 												<img src="record@1357admin/dist/img/<?= $row['image'] ?>" alt="">
 											</a>
 										</div>
 										<div class="info1">
 											<div class="title">
-												<a href="finterview-details.php?id=<?= base64_encode($row['mainId']) ?>"><?= $row['heading'] ?></a>
+												<a href="interview-details.php?id=<?= base64_encode($row['mainId']) ?>"><?= $row['heading'] ?></a>
 											</div>
 
 										</div>

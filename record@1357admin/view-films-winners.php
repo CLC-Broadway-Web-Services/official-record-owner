@@ -33,7 +33,7 @@ $cateogryQuery = $function->getAllItems("$table");
   <section class="content-header">
     <h1> Manage Films Winners <small>View Films Winners</small> </h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active">View Films Winners</li>
     </ol>
   </section>
@@ -88,13 +88,13 @@ $cateogryQuery = $function->getAllItems("$table");
                       <td><img src="dist/img/<?php echo $row['image']; ?>" height="100" width="200" /></td>
                       <td><?php echo date('d-m-Y', strtotime($row['created_at'])); ?></td>
                       <td>
-                      <a href="?status=<?= $row['status'] ? 0 : 1 ?>&id=<?php echo $row['id']; ?>"><i class="fa fa-toggle-<?= $row['status'] ? "on" : "off" ?>"></i></a>
+                      <a href="/record@1357admin/view-films-winners.php?status=<?= $row['status'] ? 0 : 1 ?>&id=<?php echo $row['id']; ?>"><i class="fa fa-toggle-<?= $row['status'] ? "on" : "off" ?>"></i></a>
 
                       </td>
                       <td>
-                        <a href="add-films-winners.php?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a>
+                        <a href="/record@1357admin/add-films-winners.php?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a>
                         ||
-                        <a href="?id=<?php echo $row['id']; ?>&delete=y" onClick="return confirm('Are you sure !! Record will be delete parmanently ..!!')"><i class="fa fa-trash-o"></i></a>
+                        <a href="/record@1357admin/view-films-winners.php?id=<?php echo $row['id']; ?>&delete=y" onClick="return confirm('Are you sure !! Record will be delete parmanently ..!!')"><i class="fa fa-trash-o"></i></a>
                       </td>
                     </tr>
                   <?php endforeach; ?>

@@ -16,7 +16,7 @@ $Section2Data = $function->getAllItems($table)[0];
   <section class="content-header">
     <h1> Manage Home Section2 <small>View Home Section2</small> </h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active"> View Home Section2</li>
     </ol>
   </section>
@@ -45,7 +45,7 @@ $Section2Data = $function->getAllItems($table)[0];
             <div class="table-responsive">
               <table id="example1" class="table table-bordered table-striped">
                 <div style="float: right;">
-                  <a href="update-home-section2"><button class="btn btn-primary"><i class="fa fa-edit"></i>&nbsp;&nbsp;&nbsp; Edit</button></a>
+                  <a href="/record@1357admin/update-home-section2.php"><button class="btn btn-primary"><i class="fa fa-edit"></i>&nbsp;&nbsp;&nbsp; Edit</button></a>
                 </div>
 
                 <tbody>

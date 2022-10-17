@@ -109,7 +109,7 @@ if (isset($_REQUEST['update'])) {
   <section class="content-header">
     <h1> Manage Schedule </h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active">Add Schedule</li>
     </ol>
   </section>
@@ -192,7 +192,7 @@ if (isset($_REQUEST['update'])) {
 
               <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-4">
-                  <a href="view-schedule" class="btn btn-success"><i class="fa fa-arrow-left"></i> Go Back</a>
+                  <a href="/record@1357admin/view-schedule.php" class="btn btn-success"><i class="fa fa-arrow-left"></i> Go Back</a>
                 </div>
               </div>
               <div class="form-group">

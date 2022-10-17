@@ -49,7 +49,7 @@ $bannersSocialLink = $function->getAllItemswithoutOrder($table2);
   <section class="content-header">
     <h1> Manage Banners <small>View Banners</small> </h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active">View Banners</li>
     </ol>
   </section>
@@ -77,7 +77,7 @@ $bannersSocialLink = $function->getAllItemswithoutOrder($table2);
           <div class="box-body">
 
             <div class="table-responsive">
-              <a href="add-banner" class="btn btn-success" style="float: right; margin-bottom:20px">Add Banner</a>
+              <a href="/record@1357admin/add-banner.php" class="btn btn-success" style="float: right; margin-bottom:20px">Add Banner</a>
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                   <tr>
@@ -105,12 +105,12 @@ $bannersSocialLink = $function->getAllItemswithoutOrder($table2);
                       <td><?php echo $row['image_alt']; ?></td>
                       <td><?php echo date('d-m-Y', strtotime($row['created_at'])); ?></td>
                       <td>
-                        <a href="?status=<?= $row['status'] ? 0 : 1 ?>&id=<?php echo $row['id']; ?>"><i class="fa fa-toggle-<?= $row['status'] ? "on" : "off" ?>"></i></a>
+                        <a href="/record@1357admin/view-banner.php?status=<?= $row['status'] ? 0 : 1 ?>&id=<?php echo $row['id']; ?>"><i class="fa fa-toggle-<?= $row['status'] ? "on" : "off" ?>"></i></a>
                       </td>
                       <td>
-                        <a href="add-banner.php?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a>
+                        <a href="/record@1357admin/add-banner.php?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a>
                         ||
-                        <a href="?id=<?php echo $row['id']; ?>&delete=y" onClick="return confirm('Are you sure !! Record will be delete parmanently ..!!')"><i class="fa fa-trash-o"></i></a>
+                        <a href="/record@1357admin/view-banner.php?id=<?php echo $row['id']; ?>&delete=y" onClick="return confirm('Are you sure !! Record will be delete parmanently ..!!')"><i class="fa fa-trash-o"></i></a>
                       </td>
                     </tr>
                   <?php endforeach; ?>
@@ -162,9 +162,9 @@ $bannersSocialLink = $function->getAllItemswithoutOrder($table2);
                         <i class="fa fa-toggle-<?= $row['status'] ? "on" : "off" ?>"></i></a>
                       </td> -->
                       <td>
-                        <a href="update-banner-social.php?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a>
+                        <a href="/record@1357admin/update-banner-social.php?id=<?php echo base64_encode($row['id']); ?>"><i class="fa fa-edit"></i></a>
                         ||
-                        <a href="?idSocial=<?php echo $row['id']; ?>&deleteSocial=y" onClick="return confirm('Are you sure !! Record will be delete parmanently ..!!')">
+                        <a href="/record@1357admin/view-banner.php?idSocial=<?php echo $row['id']; ?>&deleteSocial=y" onClick="return confirm('Are you sure !! Record will be delete parmanently ..!!')">
                           <i class="fa fa-trash-o"></i>
                         </a>
                       </td>

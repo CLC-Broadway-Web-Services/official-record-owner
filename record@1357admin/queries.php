@@ -27,7 +27,7 @@ if(isset($_REQUEST['delete']) && $_REQUEST['delete']=='y'){
     <section class="content-header">
         <h1> Queries </h1>
         <ol class="breadcrumb">
-            <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
             <li class="active">Queries</li>
         </ol>
     </section>
@@ -66,7 +66,7 @@ if(isset($_REQUEST['delete']) && $_REQUEST['delete']=='y'){
                                             <td><?php echo $row['message']; ?></td>
                                             <td><?php echo date('d-m-Y', strtotime($row['created_at'])); ?></td>
                                             <td>
-                                                <a href="?id=<?php echo $row['id']; ?>&delete=y" onClick="return confirm('Are you sure !! Record will be delete parmanently ..!!')"><i class="fa fa-trash-o"></i></a>
+                                                <a href="/record@1357admin/queries.php?id=<?php echo $row['id']; ?>&delete=y" onClick="return confirm('Are you sure !! Record will be delete parmanently ..!!')"><i class="fa fa-trash-o"></i></a>
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>

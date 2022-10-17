@@ -27,7 +27,7 @@ $cateogryQuery = $function->getAllItems("$table");
   <section class="content-header">
     <h1> Manage Services Promotion <small>View Services Promotion</small> </h1>
     <ol class="breadcrumb">
-      <li><a href="home.php"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li><a href="/record@1357admin/home.php"><i class="fa fa-dashboard"></i> Home</a></li>
       <li class="active">View Services Promotion</li>
     </ol>
   </section>
